@@ -1,0 +1,14 @@
+body {
+background-color: lightcoral;
+font-family:Arial;
+}
+
+@font-face {
+    font-family: "OCR typeface";
+    src: url("myfont.woff");
+}
+
+h1 {
+    font-family:"OCR typeface";
+    font-size: 300px;
+}
