@@ -43,7 +43,7 @@
 
      <!-- !!! MARKER 1 !!! -->
 
-      <a-marker type='pattern' url='pattern-marker1111.patt' smooth="true">
+      <a-marker type='pattern' url='pattern-marker0000.patt' smooth="true">
 
         <!-- This is the object <a-object> 
           Edit size, position, texture and animation here -->
@@ -65,9 +65,64 @@
 
         <!-- !!! END MARKER 1 !!! -->
 
-      </a-marker type='pattern' url='pattern-marker1111.patt' smooth="true">
+        </a-marker>
+      
 
-           <a-box
+     
+
+
+      <a-entity camera></a-entity>
+    </a-scene>
+
+  </body>
+
+ <body>
+    <a-scene embedded arjs environment="#env" vr-mode-ui="enabled: false">
+      <a-assets>
+        <a-cubemap id="env">
+          <img src="Daylight-Box_Right.jpg">
+          <img src="Daylight-Box_Left.jpg">
+          <img src="Daylight-Box_Top.jpg">
+          <img src="Daylight-Box_Bottom.jpg">
+          <img src="Daylight-Box_Front.jpg">
+          <img src="Daylight-Box_Back.jpg">
+        </a-cubemap>
+      </a-assets>
+
+      <a-light type="ambient" color="#888"></a-light>
+      <a-light type="point" intensity="0.3" position="2 4 4"></a-light>
+
+      <!-- DONT EDIT ABOVE
+                o   o
+                 )-(
+                (O O)
+                 \=/
+                .-"-.
+               //\ /\\
+             _// / \ \\_
+            =./ {,-.} \.=
+                || ||
+                || ||    
+              __|| ||__  
+             `---" "---'   
+           EDIT FROM HERE ON          
+      -->
+
+      <!-- This is the marker, inside the <marker> 
+           the objects that will appear at that position -->
+
+      <!-- You can create your own markers here. ONLY USE JPEGS not PNG!
+      https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
+     -->
+
+     <!-- !!! MARKER 1 !!! -->
+
+      <a-marker type='pattern' url='pattern-marker1111.patt' smooth="true">
+
+        <!-- This is the object <a-object> 
+          Edit size, position, texture and animation here -->
+
+          <a-box
           width="4.5"
           height="6"
           depth="0.4"
@@ -81,6 +136,10 @@
           roughness="0.0"          
           >
           </a-box>
+
+        <!-- !!! END MARKER 1 !!! -->
+
+        </a-marker>
       
 
      
@@ -90,4 +149,80 @@
     </a-scene>
 
   </body>
+
+   <body>
+    <a-scene embedded arjs environment="#env" vr-mode-ui="enabled: false">
+      <a-assets>
+        <a-cubemap id="env">
+          <img src="Daylight-Box_Right.jpg">
+          <img src="Daylight-Box_Left.jpg">
+          <img src="Daylight-Box_Top.jpg">
+          <img src="Daylight-Box_Bottom.jpg">
+          <img src="Daylight-Box_Front.jpg">
+          <img src="Daylight-Box_Back.jpg">
+        </a-cubemap>
+      </a-assets>
+
+      <a-light type="ambient" color="#888"></a-light>
+      <a-light type="point" intensity="0.3" position="2 4 4"></a-light>
+
+      <!-- DONT EDIT ABOVE
+                o   o
+                 )-(
+                (O O)
+                 \=/
+                .-"-.
+               //\ /\\
+             _// / \ \\_
+            =./ {,-.} \.=
+                || ||
+                || ||    
+              __|| ||__  
+             `---" "---'   
+           EDIT FROM HERE ON          
+      -->
+
+      <!-- This is the marker, inside the <marker> 
+           the objects that will appear at that position -->
+
+      <!-- You can create your own markers here. ONLY USE JPEGS not PNG!
+      https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
+     -->
+
+     <!-- !!! MARKER 1 !!! -->
+
+      <a-marker type='pattern' url='pattern-marker0000.patt' smooth="true">
+
+        <!-- This is the object <a-object> 
+          Edit size, position, texture and animation here -->
+
+          <a-box
+          width="4.5"
+          height="6"
+          depth="0.4"
+          position="0 0.5 0" 
+          rotation="-90 0 0"               
+          src="pixelated 5.png"
+          transparent="true"
+          alphaTest= "0.5"            
+          env-map="#env"
+          metalness="1.0"
+          roughness="0.0"          
+          >
+          </a-box>
+
+        <!-- !!! END MARKER 1 !!! -->
+
+        </a-marker>
+      
+
+     
+
+
+      <a-entity camera></a-entity>
+    </a-scene>
+
+  </body>
+
+
 </html>
