@@ -49,8 +49,8 @@
           Edit size, position, texture and animation here -->
 
         <a-box
-        width="4.5"
-        height= "6"
+        width="2.25"
+        height= "3"
         depth="0.1"
         position="0 0.5 0"
         rotation="-90 0 0"
@@ -64,8 +64,30 @@
         </a-box>
 
         <!-- !!! END MARKER 1 !!! -->
-      </a-marker>
       
+     <!-- !!! MARKER 2 !!! -->   
+      
+      </a-marker type='pattern' url='pattern-marker1111.patt' smooth="true">
+     
+        <!-- This is the object <a-object> 
+          Edit size, position, texture and animation here -->
+
+        <a-box
+        width="2.25"
+        height= "3"
+        depth="0.1"
+        position="0 0.5 0"
+        rotation="-90 0 0"
+        src="pixelated 2.png"
+        transparent="true"
+        alphaTest="0.5"
+        env-map="#env"
+        metalness="0.5"
+        roughness="0.1"                  
+            >                  
+          </a-box>
+  
+          <!-- !!! END MARKER 1 !!! -->
       
 
      
