@@ -48,103 +48,31 @@
         <!-- This is the object <a-object> 
           Edit size, position, texture and animation here -->
 
-        <a-box
-        width="4.5"
-        height="6"
-        depth="0.1"
-        position="0 0 0"
-        rotation="0 0 0"
-        src="pixelated 1.png"
-        transparent="true"
-        alphaTest="0.5"
+        <a-sphere
+        radius="0.8"
+        position= "0 0.5 0"
+        src="sky.jpeg"
         env-map="#env"
-        metalness="0.5"
+        metalness="0.9"
         roughness="0.1"                  
+        animation="
+         property: rotation; 
+         from: 0 0 0; 
+         to: 0 360 0; 
+         easing: linear; 
+         dur: 10000; 
+         loop:true"
           >                  
-        </a-box>
+        </a-sphere>
 
         <!-- !!! END MARKER 1 !!! -->
+      </a-marker>
       
-     <!-- !!! MARKER 2 !!! -->   
       
-      <a-marker type='pattern' url='pattern-marker1111.patt' smooth="true">
 
-      <a-box
-        width="4.5"
-        height="6"
-        depth="0.1"
-        src="pixelated 2.png"
-        transparent="true"
-        alphaTest="0.5"
-        env-map="#env"
-        metalness="0.5"
-        roughness="0.1"                  
-          >                  
-      </a-box>
-  
-          <!-- !!! END MARKER 2 !!! -->
-      
-       <!-- !!! MARKER 3 !!! -->   
-      
-      <a-marker type='pattern' url='pattern-marker2222.patt' smooth="true">
-
-      <a-box
-        width="4.5"
-        height="6"
-        depth="0.1"
-        src="pixelated 3.png"
-        transparent="true"
-        alphaTest="0.5"
-        env-map="#env"
-        metalness="0.5"
-        roughness="0.1"                  
-          >                  
-      </a-box>
-  
-          <!-- !!! END MARKER 3 !!! -->
      
-          <!-- !!! MARKER 4 !!! -->   
-      
-      <a-marker type='pattern' url='pattern-marker3333.patt' smooth="true">
-
-       <a-box
-       width="4.5"
-       height="6"
-       depth="0.1"
-       src="pixelated 4.png"
-       transparent="true"
-       alphaTest="0.5"
-       env-map="#env"
-       metalness="0.5"
-       roughness="0.1"                  
-          >                  
-      </a-box>
-
-        <!-- !!! END MARKER 4 !!! -->
-
-<!-- !!! MARKER 5 !!! -->   
-      
-     <a-marker type='pattern' url='pattern-marker4444.patt' smooth="true">
-       <a-box
-       width="4.5"
-       height="6"
-       depth="0.1"
-       src="pixelated 5.png"
-       transparent="true"
-       alphaTest="0.5"
-       env-map="#env"
-       metalness="0.5"
-       roughness="0.1"                  
-        >                  
-       </a-box>
-
-      <!-- !!! END MARKER 5 !!! -->
-
-      
 
 
-
-       
       <a-entity camera></a-entity>
     </a-scene>
 
