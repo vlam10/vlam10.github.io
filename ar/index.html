@@ -54,12 +54,19 @@
           depth="0.4"
           position="0 0.2 0" 
           rotation="65 10 0"               
-          src="pixelated_1.png"
+          src="pixelated_1.jpg"
           transparent="true"
           alphaTest= "0.5"            
           env-map="#env"
           metalness="1.0"
-          roughness="0.0"          
+          roughness="0.0"  
+          animation="
+         property: rotation; 
+         from: 0 0 0; 
+         to: 0 360 0; 
+         easing: linear; 
+         dur: 10000; 
+         loop:true"        
           >
           </a-box>
 
