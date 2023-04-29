@@ -1,0 +1,16 @@
+body{
+    background-color: orange;
+}
+
+img{
+    width: 100%;
+}
+
+div.box{
+    height: 300px;
+    width: 50%;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    background-color: blue;
+
+}
