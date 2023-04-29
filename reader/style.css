@@ -1,6 +1,7 @@
 body {
 background-color: rgb(236, 243, 252);
 font-family: Helvetica;
+
 }
 
 @font-face {
@@ -26,6 +27,13 @@ font-family: 'Times New Roman', Times, serif;
 margin-top:12%;
 margin-bottom: 8%;
 line-height: 24px;
+}
+
+h4 {
+ font-size: 16px;
+ font-family:'Times New Roman', Times, serif;
+ font-style: bold;
+ margin-bottom: 2%;
 }
 
 p {
