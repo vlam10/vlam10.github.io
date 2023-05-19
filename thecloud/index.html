@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function () {
+  //add constraints object
+  var constraints = { audio: true, video: true };
+
+  //call getUserMedia, then the magic
+  navigator.mediaDevices
+    .getUserMedia(constraints)
+    .then(function (mediaStream) {
+      var video = document.querySelector("video");
+      video.srcObject = mediaStream;
+      video.play();
+    })
+    .catch(function (err) {});
+};
+    </script>
+
+</head>
+<body>
+
+    <div id="dimensions"></div>.
+
+    <script>
+    let text = "dimensions: " + screen.width + "px" + " x " + screen.height + "px"
+    
+    document.getElementById("dimensions").innerHTML = text;
+    </script>
+    
+
+ <div class="background-cam">
+        <video class="webcam"></video>
+ </div>
+
+<div class="container">
+
+    <div class="left width20">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        
+    </div>
+
+    <div class="middle width30">
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error mollitia quasi aliquam quaerat neque rerum, facere alias architecto optio, illo fuga iste animi aut. Illum tempore autem cum eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quaerat? Animi sunt iste nam corporis dolore minima dicta voluptatem? Repellat iusto rem necessitatibus omnis perspiciatis quae ullam laborum provident quaerat.</p>
+    </div>
+   
+
+        
+</div>
+
+
+
+
+</body>
+</html>
