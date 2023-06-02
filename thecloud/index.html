@@ -26,7 +26,14 @@
 </head>
 <body>
 
+  <div class="userdetails">
+    <div id="ipaddress"></div>
     <div id="dimensions"></div>
+  </div>
+
+  <div class="time">
+    <div id="dateandtime"></div>
+  </div>
 
     <script>
     let text = "dimensions: " + screen.width + "px" + " x " + screen.height + "px"
@@ -37,10 +44,8 @@
 
 <script type="application/javascript">
     function getIP(json) {
-      document.write("IP_address: ", json.ip);
-      
+      document.getElementById("ipaddress").innerHTML = "IP Address:" + json.ip;
     }
-  
   </script>
   
   <script type="application/javascript" 
@@ -48,6 +53,27 @@
 
 </script>
     
+
+<script type="application/javascript">
+var myTimeout = setTimeout(dateTimer, 1000);
+
+function dateTimer() {
+
+var current = new Date();
+var cDate = current.getFullYear() + '.' + (current.getMonth() + 1) + '.' + current.getDate();
+var cTime = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
+var dateTime = cDate + ' ' + cTime;
+console.log(dateTime);
+
+document.getElementById("dateandtime").innerHTML = dateTime;
+
+setTimeout(dateTimer, 1000);
+
+}
+
+
+
+</script>
 
  <div class="background-cam">
         <video class="webcam"></video>
@@ -72,23 +98,9 @@
         
     </div>
 
-    
 
     <div class="middle width30">
-      <div class="popup1">
-        <p>Thursday · 4 May 2023 · 7:34pm</p> 
-        <p>IMG_5566</p>
-        <p>Apple iPhone 13</p>
-        <p>Wide Camera - 26mm</p>
-        <p>3024 x 3024</p>
-
-        <p>Tuesday · 23 June 2021 · 9:42pm</p> 
-        <p>IMG_4369</p>
-        <p>Apple iPhone 11</p>
-        <p>Wide Camera - 26mm</p>
-        <p>3024 x 3024</p>
-      </div>   
-    
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde possimus nam perferendis voluptas. Ipsum fugiat atque laudantium eum, excepturi eius dignissimos delectus reiciendis. Obcaecati autem dolores eius porro nisi.</p>
     </div>
    
 
