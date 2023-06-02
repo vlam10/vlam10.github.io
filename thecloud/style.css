@@ -44,7 +44,7 @@ div.background-cam {
 div.container {
     display:flex;
     flex-wrap:wrap;
-    height: 400px;
+    height: 100%;
     
 }
 
@@ -99,7 +99,7 @@ div.blankbox {
     height:35px;
     width:90%;
     align-items:center;
-    background-color:
+    background-color;
     margin:8px;
     border-radius: 10px;
    
