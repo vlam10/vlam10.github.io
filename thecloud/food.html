@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function () {
+  //add constraints object
+  var constraints = { audio: true, video: true };
+
+  //call getUserMedia, then the magic
+  navigator.mediaDevices
+    .getUserMedia(constraints)
+    .then(function (mediaStream) {
+      var video = document.querySelector("video");
+      video.srcObject = mediaStream;
+      video.play();
+    })
+    .catch(function (err) {});
+};
+    </script>
+
+</head>
+<body>
+
+  <div class="userdetails">
+    <div id="ipaddress"></div>
+    <div id="dimensions"></div>
+  </div>
+
+  <div class="time">
+    <div id="dateandtime"></div>
+  </div>
+
+    <script>
+    let text = "dimensions: " + screen.width + "px" + " x " + screen.height + "px"
+    
+    document.getElementById("dimensions").innerHTML = text;
+   </script>
+
+
+<script type="application/javascript">
+    function getIP(json) {
+      document.getElementById("ipaddress").innerHTML = "IP Address: " + json.ip;
+    }
+  </script>
+  
+  <script type="application/javascript" 
+    src="https://api.ipify.org?format=jsonp&callback=getIP">
+
+</script>
+    
+
+<script type="application/javascript">
+var myTimeout = setTimeout(dateTimer, 1000);
+
+function dateTimer() {
+
+var current = new Date();
+var cDate = current.getFullYear() + '.' + (current.getMonth() + 1) + '.' + current.getDate();
+var cTime = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
+var dateTime = cDate + ' ' + cTime;
+console.log(dateTime);
+
+document.getElementById("dateandtime").innerHTML = dateTime;
+
+setTimeout(dateTimer, 1000);
+
+}
+
+
+
+</script>
+
+ <div class="background-cam">
+        <video class="webcam"></video>
+ </div>
+
+<div class="container">
+
+    <div class="left width20">
+         <div class="box">
+          <a href="index.html">Index</a>
+         </div>
+        <div class="box">
+          <a href="animals.html">Animals</a>
+        </div>
+        <div class="blankbox"></div>
+        <div class="box">
+          <a href="people.html">People</a>
+        </div>
+        <div class="blankbox"></div>
+        <div class="box">
+          <a href="festival.html">Festival</a>
+        </div>
+        <div class="box">
+          <a href="travel.html">Travel</a>
+        </div>
+        <div class="box">
+          <a href="food.html">Food</a>
+        </div>
+        <div class="blankbox"></div>
+        <div class="box">
+          <a href="summer.html">Summer</a>
+        </div>
+        <div class="box">
+          <a href="sport.html">Sporting Events</a>
+        </div>
+        <div class="blankbox"></div>
+        <div class="box">
+          <a href="art.html">Art</a>
+        </div>
+        <div class="blankboSummerx"></div>
+    </div>
+
+
+    <div class="middle width30">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde possimus nam perferendis voluptas. Ipsum fugiat atque laudantium eum, excepturi eius dignissimos delectus reiciendis. Obcaecati autem dolores eius porro nisi.</p>
+    </div>
+   
+
+        
+</div>
+
+
+
+
+</body>
+</html>
